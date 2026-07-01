@@ -3,7 +3,7 @@ services:
     name: fb-report-bot
     runtime: python
     buildCommand: pip install -r requirements.txt
-    startCommand: python bot.py
+    startCommand: bot.py
     envVars:
       - key: BOT_TOKEN
         sync: false
