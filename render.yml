@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: fb-report-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: ADMIN_IDS
+        sync: false
+      - key: CHANNEL_1
+        sync: false
+      - key: CHANNEL_1_LINK
+        sync: false
+      - key: CHANNEL_2
+        sync: false
+      - key: CHANNEL_2_LINK
+        sync: false
+      - key: CHANNEL_3
+        sync: false
+      - key: CHANNEL_3_LINK
+        sync: false
+    autoDeploy: true
